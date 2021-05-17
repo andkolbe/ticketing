@@ -7,7 +7,7 @@ import { TicketUpdatedListener } from './events/listeners/ticket-updated-listene
 import { PaymentCreatedListener } from './events/listeners/payment-created-listener'
 
 const start = async () => {
-  console.log('Starting....')
+  console.log('Starting...')
   if (!process.env.JWT_KEY) { // prevents typescript error with process.env on app startup
     throw new Error('JWT must be defined')
   }
