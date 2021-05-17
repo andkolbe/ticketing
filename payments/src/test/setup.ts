@@ -13,6 +13,7 @@ declare global {
 }
 
 jest.mock('../nats-wrapper') // mock the nats-wrapper when executing our tests
+jest.mock('../stripe')
 
 let mongo: any;
 

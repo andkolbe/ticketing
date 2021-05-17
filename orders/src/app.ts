@@ -32,4 +32,6 @@ app.all('*', async () => { // throw an error if someone tries to go to any route
 
 app.use(errorHandler)
 
+console.log('Please work')
+
 export { app }
