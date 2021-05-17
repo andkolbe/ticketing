@@ -3,6 +3,7 @@ import mongoose from 'mongoose';
 import { app } from './app'
  
 const start = async () => {
+  console.log('starting up...')
   if (!process.env.JWT_KEY) { // prevents typescript error with process.env on app startup
     throw new Error('JWT must be defined')
   }
